@@ -1,0 +1,14 @@
+pytorch3d
+__pycache__
+networks/pts_encoder/pointnet2_utils/pointnet2/build
+networks/pts_encoder/pointnet2_utils/pointnet2/dist
+networks/pts_encoder/pointnet2_utils/pointnet2/pointnet2.egg-info
+networks/pts_encoder/pointnet2_utils/pointnet2/pointnet2_cuda.cpython-311-x86_64-linux-gnu.so
+data
+configs/obj_meta.json
+configs/real_obj_meta.json
+results/*
+common
+*.DS_Store
+output_img/*.png
+output_img/*.jpg

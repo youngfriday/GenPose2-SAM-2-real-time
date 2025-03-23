@@ -1,0 +1,36 @@
+{
+    "camera": {
+        "quaternion": [
+            1,
+            0,
+            0,
+            0
+        ],
+        "translation": [
+            0,
+            0,
+            0
+        ],
+        "intrinsics": {
+            "fx": 912.77941895,
+            "fy": 913.12872314,
+            "cx": 629.66943359 ,
+            "cy": 379.89993286,
+            "width": 1280,
+            "height": 720
+        },
+        "scene_obj_path": "",
+        "background_image_path": "",
+        "background_depth_path": "",
+        "distances": [],
+        "kind": ""
+    },
+    "scene_dataset": "real",
+    "env_param": {},
+    "face_up": true,
+    "concentrated": false,
+    "comments": "real scan video data",
+    "runtime_seed": -1,
+    "baseline_dis": 0,
+    "emitter_dist_l": 0
+}
