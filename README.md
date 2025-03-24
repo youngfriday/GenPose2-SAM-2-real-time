@@ -1,5 +1,6 @@
 # GenPose2-SAM-2-REAL-TIME 
-## Demos
+## Demos 
+> Wait 10 seconds for loading demo......
 <div align=center>
 <p align="center">
 <img src="./assets/demo.gif" width="880">
