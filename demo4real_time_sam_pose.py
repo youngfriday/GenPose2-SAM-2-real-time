@@ -21,7 +21,7 @@ TEXT_THRESHOLD = 0.25
 
 
 # TODO!!!!! change to your own text prompt
-TEXT_PROMPT = "kettle , pen"
+TEXT_PROMPT = "teapot"
 
 # use bfloat16 for the entire notebook
 torch.autocast(device_type="cuda", dtype=torch.float16).__enter__()
@@ -41,7 +41,7 @@ TRACKING = True                      # Tracking mode
 # Tracking parameter, if the relative pose between the current frame and the previous frame
 # is large, such as low video FPS or fast object motion, you can set a larger value. The default
 # TRACKING_TO is set to 0.15.
-TRACKING_T0 = 0.15
+TRACKING_T0 = 0.5
 
 SCORE_MODEL_PATH='results/ckpts/ScoreNet/scorenet.pth'     # Path to the score model
 ENERGY_MODEL_PATH='results/ckpts/EnergyNet/energynet.pth'  # Path to the energy model
@@ -54,7 +54,7 @@ GenPose2 = create_genpose2(
     energy_model_path=ENERGY_MODEL_PATH,
     scale_model_path=SCALE_MODEL_PATH,
 )
-cv2.namedWindow('rgb')
+
 ######################################## PARAMETERS ########################################
 
 # build grounding dino model from local path
@@ -75,7 +75,7 @@ time.sleep(5)
 if_init = False
 
 # prompt grounding dino to get the box coordinates on specific frame
-
+cv2.namedWindow('rgb')
 rgb_image = camera.capture_image("rgb")
 # save the first scene image 
 cv2.imwrite("rgb.jpg", rgb_image)
@@ -194,6 +194,3 @@ while True:
     if cv2.waitKey(1) & 0xFF == ord("q"):
         break
     
-
-# cap.release()
-# gif = imageio.mimsave("./result.gif", frame_list, "GIF", duration=0.00085)

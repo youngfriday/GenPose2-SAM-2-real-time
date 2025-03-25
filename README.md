@@ -49,6 +49,16 @@ follow [GENPOSE2](https://github.com/Omni6DPose/GenPose2)
 
 follow [Grounded-SAM-2](https://github.com/IDEA-Research/Grounded-SAM-2)
 
+## Run demo
+
+1. change your own `TEXT_PROMPT` at line 24, like `kettle`(single) or `pen,kettle`(mult)
+
+2. adjust the `TRACKING_T0` at line 44 according to your own situation
+
+```bash
+python demo4real_time_sam_pose.py
+```
+**Good Luck!**
 
 ## Reference
 - [GENPOSE2](https://github.com/Omni6DPose/GenPose2)
